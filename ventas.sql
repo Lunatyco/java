@@ -175,3 +175,4 @@ commit;
 select (vendedor.sueldo_base + (boleta.monto_boleta * vendedor.porc_comision)/100  ) as sueldo_total_vendedor from vendedor inner join boleta on vendedor.cod_vendedor = boleta.id_vendedor;
 
 select detalle_boleta.cantidad, boleta.monto_boleta, detalle_boleta.valor_total as valor_con_descuento from detalle_boleta inner join boleta on boleta.nro_boleta = detalle_boleta.nro_boleta;
+commit;
